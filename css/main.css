@@ -1,0 +1,67 @@
+:root {
+    --primary-text-color: rgba(255, 255, 255, 0.884);
+    --focus-text-color: #ee2a2a;
+    --secondary-border-color: #D0AB6D;
+    --focus-bg-color: #e9ebea;
+    --secondary-bg-color: #222;
+}
+
+body{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#Site-NavBar{
+    text-align: center;
+}
+
+#Site-NavBar .nav-item{
+    border-bottom: 1px solid transparent;
+}
+
+#Site-NavBar .nav-item:hover{
+    transition: 0.5s;
+    color: var(--focus-text-color);
+    background-color: var(--focus-bg-color);
+    border-color: var(--focus-text-color);
+}
+
+#Site-Footer{
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-color);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+#Site-Footer a{
+    transition: 0.5s;
+    color: var(--primary-text-color);
+    text-decoration: underline;
+    display: block;
+}
+
+#Site-Footer a:hover{
+    text-decoration: none;
+    color: var(--focus-text-color);
+}
+
+#Site-Footer svg{
+    transition: 0.5s;
+    height: 25px;
+    width: 25px;
+    fill: var(--primary-text-color);
+    text-decoration: none;
+}
+
+#Site-Footer svg:hover{
+    fill: var(--focus-text-color);
+}
+
+.social-media-icon{
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+
+.news-letter{
+    margin-top: 15px;
+}

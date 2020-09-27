@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal International</title>
+
+    <script src="./js/lib/jquery-3.3.1.min.js"></script>
+    <script src="./js/lib/popper.min.js"></script>
+    <script src="./js/lib/bootstrap.min.js"></script>
+    <script src="./js/lib/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/fb1a7cd32f.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/lib/owl.theme.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <section id="Site-NavBar">
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="https://www.modus.com.bd/moduslogo.jpg" alt=""></a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand d-xs-block d-lg-none" href="#"><img src="https://www.modus.com.bd/moduslogo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Telemetry</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    <section id="Site-Body">
+      <script>
+        $(document).ready(() => {
+          loadPartialView('Site-Body', Routs.Carousel);
+        });
+      </script>
+    </section>
+    <section id="Site-Footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>G.Samaras S.A.</h4>
+                    House # 06 (5th Floor), Road # 08, 
+                    <br>
+                    Block-F, Niketan, Gulshan-1,
+                    <br> 
+                    Dhaka-1212, Bangladesh.
+                    <br>
+                    <a href="#">Complaint </a>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    Email: <a href="mailto:info@modus.com.bd">info@modus.com.bd</a>
+                    <br>
+                    Landline: <a value="+88028836185" target="_blank" href="tel:02-8836185">+88 02 8836185</a>
+                    <br>
+                    Service Hotline: <a value="+88028836185" target="_blank" href="+8801986500500">+88 01986 500 500</a>
+                    <br>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    </svg>
+                    Monday - Friday: 08.00 - 16.00
+                </div>
+                <div class="col-md-4">
+                    <h4>Stay Connected</h4>
+                    <a href="#" class="social-media-icon">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0"/></svg>
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <svg viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"/></svg>                   
+                    </a>
+                    <a href="#" class="social-media-icon">
+                        <svg viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+                            <path d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80
+                                    c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904
+                                    C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728
+                                    c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816
+                                    c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096
+                                    C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="news-letter">Subscribe to newsletter</a>
+                    <br>
+                    All rights reserved.    
+                    <a href="#">
+                        © 2020 Blume Digital Corp. 
+                    </a>
+                    <a href="#">Terms of sale</a>
+                    <a href="#">Privacy notice</a>
+                    <a href="#">Cookie policy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
