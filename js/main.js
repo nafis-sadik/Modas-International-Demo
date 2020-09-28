@@ -1,6 +1,7 @@
 const Routs = {
     Domain: 'http://127.0.0.1:5501',
-    Carousel: '/partialViewes/carousel.html'
+    Carousel: '/partialViewes/testimonial.html',
+    Home: '/partialViewes/home.html'
 }
 
 let loadPartialView = (HolderTagId, Url) => {
