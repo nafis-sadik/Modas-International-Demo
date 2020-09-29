@@ -66,29 +66,34 @@
             </div>
         </div>
     </div>
-    <div id="Testimonial">
-        <script>     
-            $(document).ready(() => {
-                loadPartialView('Testimonial', Routs.Carousel);
-                $("#Home .owl-carousel").owlCarousel({
-                    items: 1,
-                    loop:true,
-                    pagination:true,
-                    navigation:false,
-                    navigationText:["",""],
-                    slideSpeed:1000,
-                    singleItem:true,
-                    autoPlay:true
-                });
-            });
-        </script>
+    <div id="Testimonial-Viewport">
     </div>
+    <div id="LatestUpdates-Viewport"></div>
   </section>
+  <script>     
+      $(document).ready(() => {
+          loadPartialView('Testimonial-Viewport', Routs.Carousel);
+          loadPartialView('LatestUpdates-Viewport', Routs.LatestUpdates);
+
+          $("#Home .owl-carousel").owlCarousel({
+              items: 1,
+              loop:true,
+              pagination:true,
+              slideSpeed:1000,
+              autoPlay:true,
+              responsiveClass:true,
+              navigation: false
+          });
+
+          $('#Home .carousel-single').css({ 'height' : '100%' });
+      });
+  </script>
   <style>
     .carousel-item {
         padding: 15vw 0;
         background-size:cover; 
         background-position:center;
+        height: 100%;
     }
     
     .custom-carousel-img-style{
@@ -97,21 +102,11 @@
         background-attachment: fixed;
     }
 
-    strong, h1, h2, h3, h4, h5, h6{
-        transition: 0.5s;
-        color: var(--focus-text-color);
-    }
-
-    strong:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
-        cursor: pointer;
-        color: var(--secondary-border-color);
-    }
-
     #HomeBody{
         padding: 20px 10%;
     }
 
-    #HomeBody h2{
+    #HomeBody h2, #LatestUpdates h2{
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 2px solid black;
@@ -133,5 +128,9 @@
     #Home .carousel-single{
         height: 100vh;
         vertical-align: baseline;
+    }
+
+    #HomeBody .row div{
+        padding-bottom: 50px;
     }
   </style>

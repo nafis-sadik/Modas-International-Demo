@@ -1,0 +1,99 @@
+<section id="LatestUpdates">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Latest news</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 0;">
+            <div class="owl-carousel">
+                <div>
+                    <time datetime="2019-09-10 09:02:29">10.9.2019</time>
+                    <span>MEDIC EAST AFRICA 2019</span>
+                    <p>G.SAMARAS S.A. will participate in Medic East Africa exhibition in Nairobi 24-26/09/2019. We invite our partners to visit our booth (3B33)...</p>
+                    <a href="#"> Keep Reading.... </a>
+                </div>
+                <div>
+                    <time datetime="2019-09-10 09:02:29">10.9.2019</time>
+                    <span>EU BUSINESS AVENUES IN SOUTH EAST ASIA</span>
+                    <p>Our company was one of the forty nine innovative European enterprises in the Healthcare and Medical technologies sector that took part in the business mission of EU to Singapore and...</p>
+                    <a href="#"> Keep Reading.... </a>
+                </div>
+                <div>
+                    <time datetime="2019-09-10 09:02:29">10.9.2019</time>
+                    <span>CYCLING RACE</span>
+                    <p>Within the frame of corporate social responsibility, our company always supports youth sports such as the cycling race that took place recently in Metagkitsi-Chalkidiki (famous as a tourist destination and...</p>
+                    <a href="#"> Keep Reading.... </a>
+                </div>                
+                <div>
+                    <time datetime="2019-09-10 09:02:29">10.9.2019</time>
+                    <span>MEDIC EAST AFRICA 2019</span>
+                    <p>G.SAMARAS S.A. will participate in Medic East Africa exhibition in Nairobi 24-26/09/2019. We invite our partners to visit our booth (3B33)...</p>
+                    <a href="#"> Keep Reading.... </a>
+                </div>
+                <div>
+                    <time datetime="2019-09-10 09:02:29">10.9.2019</time>
+                    <span>EU BUSINESS AVENUES IN SOUTH EAST ASIA</span>
+                    <p>Our company was one of the forty nine innovative European enterprises in the Healthcare and Medical technologies sector that took part in the business mission of EU to Singapore and...</p>
+                    <a href="#"> Keep Reading.... </a>
+                </div>
+                <div>
+                    <time datetime="2019-09-10 09:02:29">10.9.2019</time>
+                    <span>CYCLING RACE</span>
+                    <p>Within the frame of corporate social responsibility, our company always supports youth sports such as the cycling race that took place recently in Metagkitsi-Chalkidiki (famous as a tourist destination and...</p>
+                    <a href="#"> Keep Reading.... </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $("#LatestUpdates .owl-carousel").owlCarousel({     
+            items: 3,       
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        });
+    });
+</script>
+<style>
+    #LatestUpdates time, #LatestUpdates a{
+        transition: 0.5s;
+        color: var(--focus-text-color);
+    }
+
+    #LatestUpdates a:hover{
+        text-decoration: none;
+        color: var(--secondary-border-color);
+    }
+
+    #LatestUpdates span{
+        transition: 0.5s;
+        color: var(--focus-text-color);
+        display: block;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    #LatestUpdates span:hover, #LatestUpdates time:hover{
+        cursor: pointer;
+        color: var(--secondary-border-color);
+    }
+</style>
