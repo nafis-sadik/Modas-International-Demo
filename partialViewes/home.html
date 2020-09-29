@@ -1,0 +1,137 @@
+<section id="Home" class="section-carousel">    
+    <div class="carousel-single owl-carousel owl-drag owl-theme">
+      <div class="carousel-item w-100 d-flex align-items-center custom-carousel-img-style" style="background-image: url('./img/national-cancer-institute-mBrfAiw_CZA-unsplash.jpg');">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="col text-center text-white">
+                    <h2 class="h1 text-uppercase"><strong>Modas International</strong></h2>
+                    <p class="text-uppercase small">A whole world of technical excellence</p>
+                    <br>
+                    <a href="#" class="btn-custom-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item w-100 d-flex align-items-center custom-carousel-img-style" style="background-image: url('./img/care-928653_1280.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="col text-center text-white">
+                    <h2 class="h1 text-uppercase"><strong>Modas International</strong></h2>
+                    <p class="text-uppercase small">A whole world of technical excellence</p>
+                    <br>
+                    <a href="#" class="btn-custom-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="carousel-item w-100 d-flex align-items-center custom-carousel-img-style" style="background-image: url('./img/arabian-gulf-80359_1280.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="overlay"></div>
+                <div class="col text-center text-white">
+                    <h2 class="h1 text-uppercase"><strong>Modas International</strong></h2>
+                    <p class="text-uppercase small">A whole world of technical excellence</p>
+                    <br>
+                    <a href="#" class="btn-custom-primary">Read more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="HomeBody" class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Everything about medical gas systems</h2>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ujyPaMGEdc" allowfullscreen="" style="border: none"></iframe>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Modas International</strong> having long term experience and skilled personnel, is able to provide services which could lead in an efficient product selection. All company actions are always in accordance with International Standards and arrangements [ISO 7396-1 & 2 (EN 737 - 1, 2, 3, 4, 6), HTM 02.01, Directives of Ministry of Health and Directives of National Pharmaceutical Organization (European Pharmacopoeia 5.4.1.4/5)].</p>
+                <p>The company is certified (EN ISO:9001 – ISO:13485) to offer the following services: </p>
+                <ul>
+                    <li>Design of medical gas supply systems</li>
+                    <li>Installation - Testing</li>
+                    <li>Commisioning and certification of medical gas pipeline systems</li>
+                    <li>Maintenance of Medical Gas Systems</li>
+                    <li>Remote monitoring and management of medical gas systems</li>
+                    <li>Training of personnel as specialists for installation and maintenance for medical gas equipment.</li>
+                </ul>
+                <a href="#" class="btn-custom-primary">View our products</a>
+            </div>
+            <div class="col-md-4">
+                <p><strong>Modas International</strong> is activated in the medical and special gas systems sector since 1968 and as a result it has gained valuable experience resulting in the completion of lots of projects in Greece and abroad. The company holds a vast product and services portfolio which is characterized by high quality and flexibility to each single need.</p>
+                <p>Using policies of economic scales, <strong>Modas International</strong> could offer high quality products able to cover all specifications and needs of each project in very competitive prices.</p>
+                <a href="#" class="btn-custom-primary">View our services</a>
+            </div>
+        </div>
+    </div>
+    <div id="Testimonial">
+        <script>     
+            $(document).ready(() => {
+                loadPartialView('Testimonial', Routs.Carousel);
+                $("#Home .owl-carousel").owlCarousel({
+                    items: 1,
+                    loop:true,
+                    pagination:true,
+                    navigation:false,
+                    navigationText:["",""],
+                    slideSpeed:1000,
+                    singleItem:true,
+                    autoPlay:true
+                });
+            });
+        </script>
+    </div>
+  </section>
+  <style>
+    .carousel-item {
+        padding: 15vw 0;
+        background-size:cover; 
+        background-position:center;
+    }
+    
+    .custom-carousel-img-style{
+        height: 100%;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    strong, h1, h2, h3, h4, h5, h6{
+        transition: 0.5s;
+        color: var(--focus-text-color);
+    }
+
+    strong:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
+        cursor: pointer;
+        color: var(--secondary-border-color);
+    }
+
+    #HomeBody{
+        padding: 20px 10%;
+    }
+
+    #HomeBody h2{
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid black;
+    }
+
+    #HomeBody iframe{
+        width: 100%;
+        height: 50%;
+    }
+
+    #HomeBody a{
+        float: right;
+    }
+
+    #Home .carousel-single strong{
+        color: var(--secondary-border-color) !important;
+    }
+
+    #Home .carousel-single{
+        height: 100vh;
+        vertical-align: baseline;
+    }
+  </style>
