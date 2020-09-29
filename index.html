@@ -19,7 +19,6 @@
 <body>
     <section id="Site-NavBar">
         <a class="navbar-brand d-none d-lg-block" href="#"><img src="https://www.modus.com.bd/moduslogo.jpg" alt=""></a>
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand d-xs-block d-lg-none" href="#"><img src="https://www.modus.com.bd/moduslogo.jpg" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +34,7 @@
                   <a class="nav-link" href="#">Products</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#" id="Services">Services</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Projects</a>
@@ -57,6 +56,10 @@
       <script>
         $(document).ready(() => {
           loadPartialView('Site-Body', Routs.Home);
+        });
+
+        $('#Services').click(() => {  
+          loadPartialView('Site-Body', Routs.Services);
         });
       </script>
     </section>
