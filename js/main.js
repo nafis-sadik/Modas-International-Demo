@@ -3,7 +3,8 @@ const Routs = {
     Carousel: '/partialViewes/testimonial.html',
     Home: '/partialViewes/home.html',
     LatestUpdates: '/partialViewes/latestUpdates.html',
-    Services: '/partialViewes/services.html'
+    Services: '/partialViewes/services.html',
+    Projects: '/partialViewes/projects.html'
 }
 
 let loadPartialView = (HolderTagId, Url) => {

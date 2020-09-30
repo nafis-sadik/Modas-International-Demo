@@ -63,12 +63,21 @@ body{
     fill: var(--focus-text-color);
 }
 
-#Site-Footer h4{
+#Site-Footer h1, #Site-Footer h2, #Site-Footer h3, #Site-Footer h4, #Site-Footer h5, #Site-Footer h6{
     color: var(--secondary-border-color);
 }
 
 #Site-Footer h4:hover{
     color: var(--primary-text-color);
+}
+
+.developedBy{
+    text-align: center;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    margin: 0;
+    border: 0;
 }
 
 .social-media-icon{
