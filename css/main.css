@@ -104,7 +104,7 @@ body{
     cursor: pointer;
     padding: 10px 15px;
     margin-top: 25px;
-	position: relative;
+	position: absolute;
     border: 2px solid var(--secondary-border-color);
     background-color: var(--secondary-bg-color);
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
@@ -144,4 +144,67 @@ strong, h1, h2, h3, h4, h5, h6{
 strong:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
     cursor: pointer;
     color: var(--secondary-border-color);
+}
+
+.banner{
+    overflow: hidden;
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+.banner img{
+    width: 100%;
+    margin-bottom: 50px;
+    transform: translate(0%, -30%);
+}
+
+.banner h2{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+
+.banner h2:hover{
+    color: var(--secondary-border-color);
+}
+
+.custom-accordion-style button{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-border-color);
+    background-color: var(--secondary-bg-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.custom-accordion-style .card{
+    margin-top: 25px;
+}
+.custom-accordion-style button:hover{
+    text-decoration: none;
+    color: var(--focus-text-color);
+    background-color: white;
+}
+
+.custom-accordion-style{
+    margin: 2% auto 5% auto;
+}
+
+.custom-accordion-style h1{
+    margin-bottom: 25px;
+}
+
+.custom-accordion-style button:hover{
+    text-decoration: none;
+}
+
+.custom-accordion-style button:focus{
+    text-decoration: none;
+}
+
+.custom-accordion-style .card{
+    border-bottom: 1px solid rgba(0,0,0,.125)!important;
 }

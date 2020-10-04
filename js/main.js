@@ -4,7 +4,8 @@ const Routs = {
     Home: '/partialViewes/home.html',
     LatestUpdates: '/partialViewes/latestUpdates.html',
     Services: '/partialViewes/services.html',
-    Projects: '/partialViewes/projects.html'
+    Projects: '/partialViewes/projects.html',
+    About: '/partialViewes/about.html'
 }
 
 let loadPartialView = (HolderTagId, Url) => {

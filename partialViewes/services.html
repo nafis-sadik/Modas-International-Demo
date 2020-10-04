@@ -1,23 +1,23 @@
-<div id="Services-Body">
+<div class="custom-accordion-style">
   <div class="container">    
-    <div id="ServicesImg">
+    <div class="banner">
       <h2>Stay local, think global</h2>
       <img src="/img/meeting-2284501_1280.jpg" alt="">
     </div>
   </div>
   <div class="container">
     <h1>Services</h1>
-    <div class="accordion" id="ServicesAccordion">
+    <div class="accordion custom-accordion-style button" id="ServicesAccordion">
       <div class="card">
         <button id="Design-Calculation" class="btn btn-link card-header  col-md-12" data-toggle="collapse" data-target="#collapseDesign" aria-expanded="true" aria-controls="collapseDesign">
           Design - Calculation 
         </button>
     
-        <div id="collapseDesign" class="collapse show" aria-labelledby="Design-Calculation" data-parent="#ServicesAccordion">
-          <div class="card-body">
-            The Designing department of <strong>Modas International</strong> consists of experienced engineers who can guide the customer during an initial design process in order to fulfil the requirements, offer the most cost-efficient medical gas network and equipment. This specialized department designs sufficient medical gas installation achieving the lowest implementation cost, always in accordance with International Standards and Regulations.
-          </div>
+      <div id="collapseDesign" class="collapse show" aria-labelledby="Design-Calculation" data-parent="#ServicesAccordion">
+        <div class="card-body">
+          The Designing department of <strong>Modas International</strong> consists of experienced engineers who can guide the customer during an initial design process in order to fulfil the requirements, offer the most cost-efficient medical gas network and equipment. This specialized department designs sufficient medical gas installation achieving the lowest implementation cost, always in accordance with International Standards and Regulations.
         </div>
+      </div>
       </div>
       <div class="card">
         <button id="Installation" class="btn btn-link collapsed card-header" data-toggle="collapse" data-target="#collapseInstallation" aria-expanded="false" aria-controls="collapseInstallation">
@@ -99,49 +99,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  #Services-Body button{
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--secondary-border-color);
-    background-color: var(--secondary-bg-color);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  }
-  #Services-Body .card{
-    margin-top: 25px;
-  }
-  #Services-Body button:hover{
-    text-decoration: none;
-    color: var(--focus-text-color);
-    background-color: white;
-  }
-  #Services-Body{
-    margin: 2% auto 5% auto;
-  }
-  #Services-Body h1{
-    margin-bottom: 25px;
-  }
-  #ServicesImg{
-    overflow: hidden;
-    height: 250px;
-    margin-bottom: 100px;
-  }
-  #ServicesImg img{
-    width: 100%;
-    margin-bottom: 50px;
-    transform: translate(0%, -30%);
-  }
-  #ServicesImg h2{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1;
-    color: white;
-  }
-  #ServicesImg h2:hover{
-    color: var(--secondary-border-color);
-  }
-</style>
