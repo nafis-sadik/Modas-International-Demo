@@ -4,6 +4,7 @@
     --secondary-border-color: #D0AB6D;
     --focus-bg-color: #e9ebea;
     --secondary-bg-color: #222;
+    --input-text-border-color: #d0ac6d44;
 }
 
 body{
@@ -16,9 +17,10 @@ body{
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 2;
     background-color: white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-bottom: 1px solid var(--secondary-border-color);
 }
 
 #Site-NavBar .nav-item{
@@ -99,6 +101,10 @@ body{
     opacity: 0.6;
 }
 
+#Home .carousel-single .btn-custom-primary{
+    position: relative;
+}
+
 .btn-custom-primary{
 	color: white;
     cursor: pointer;
@@ -139,6 +145,7 @@ body{
 strong, h1, h2, h3, h4, h5, h6{
     transition: 0.5s;
     color: var(--focus-text-color);
+    font-weight: 600;
 }
 
 strong:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
@@ -199,12 +206,108 @@ strong:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover{
 
 .custom-accordion-style button:hover{
     text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .custom-accordion-style button:focus{
     text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .custom-accordion-style .card{
     border-bottom: 1px solid rgba(0,0,0,.125)!important;
 }
+
+#SubmitButton{
+	color: white;
+    cursor: pointer;
+    width: 20vw;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid var(--secondary-border-color);
+    background-color: var(--secondary-bg-color);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    z-index: 1;
+}
+
+#SubmitButton:hover{
+	color: white;
+    text-decoration: none;
+    border: 2px solid var(--focus-text-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#SubmitButton:hover:before {
+	right: 0%;
+	left: auto;
+	width: 100%;
+}
+
+#SubmitButton:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	background: var(--focus-text-color);
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    transition: 0.5s;
+    color: var(--secondary-bg-color) !important;
+    background-color: var(--focus-bg-color) !important;
+    border-color: var(--secondary-border-color) !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 .2rem var(--input-text-border-color) !important;
+}
+
+#LoadingSpinner svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#LoadingSpinner{
+    background-color:white;
+    height:100vh;
+    width:100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.active{
+    color: var(--focus-text-color);
+    border-bottom: 1px solid var(--focus-text-color) !important;
+}
+
+#navbarSupportedContent{
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+@media only screen and (min-width: 992px) {    
+    #Site-NavBar .navbar{
+        padding-bottom: 0;
+    }
+} 
