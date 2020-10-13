@@ -44,7 +44,7 @@ body{
 #Site-Footer a{
     transition: 0.5s;
     color: var(--primary-text-color);
-    text-decoration: underline;
+    text-decoration: none;
     display: block;
 }
 
@@ -299,7 +299,7 @@ input[type="color"]:focus,
 
 .active{
     color: var(--focus-text-color);
-    border-bottom: 1px solid var(--focus-text-color) !important;
+    /* border-bottom: 1px solid var(--focus-text-color) !important; */
 }
 
 #navbarSupportedContent{

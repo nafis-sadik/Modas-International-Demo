@@ -6,7 +6,8 @@ const Routs = {
     Services: '/partialViewes/services.html',
     Projects: '/partialViewes/projects.html',
     About: '/partialViewes/about.html',
-    Contact: '/partialViewes/Contact.html'
+    Contact: '/partialViewes/Contact.html',
+    Products: '/partialViewes/product.html'
 }
 
 const NoLoadingScreenRouts = [Routs.Carousel, Routs.LatestUpdates]
@@ -37,6 +38,11 @@ $(document).ready(() => {
     $('.home-btn').click((elem) => {
         setActive(elem);
         loadPartialView('Site-Body', Routs.Home);
+    });
+
+    $('#Products').click((elem) => {
+        setActive(elem);
+        loadPartialView('Site-Body', Routs.Products);
     });
 
     $('#Services').click((elem) => {
