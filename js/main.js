@@ -32,7 +32,7 @@ let loadPartialView = (HolderTagId, Url) => {
 }
 
 $(document).ready(() => {
-    loadPartialView('Site-Body', Routs.Home);
+    loadPartialView('Site-Body', Routs.Products);
     $('#LoadingSpinner').fadeOut();
 
     $('.home-btn').click((elem) => {

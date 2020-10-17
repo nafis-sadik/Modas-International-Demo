@@ -1,13 +1,15 @@
 <section id="Hospital" class="d-none d-lg-block">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div id="imgContainer">
+            <div class="col-md-1"></div>
+            <div id="imgContainer" class="col-md-10">
+                <img src="/img/building.jpg" alt="">
                 <a href="#">
                     <div class="spot patientRoom1">
                         <span>Patient Rooms 1</span>
                     </div>
                 </a>
-                <a href="#">
+                <a href="#">                    
                     <div class="spot patientRoom2">
                         <span>Patient Rooms 2</span>
                     </div>
@@ -63,6 +65,7 @@
                     </div>
                 </a>
             </div>
+            <div class="col-md-1"></div>
         </div>
     </div>
 </section>
@@ -111,13 +114,8 @@
 </section>
 
 <style>
-    #imgContainer{
-        background-image: url('/img/building.jpg');
-        width: 90vw;
-        height: 90vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    #imgContainer img{
+        width: 100%;
     }
 
     #Hospital{
@@ -142,6 +140,9 @@
         background-color: brown;
         opacity: 0.6;
         text-align: center;
+        padding-right: 15px;
+        padding-left: 15px;
+        height: 16.7%;
     }
 
     .spot:hover{
@@ -161,62 +162,55 @@
     }
 
     .patientRoom1{
-        top: 18%;
-        height: 17%;
-        width: 27.7%;
+        top: 18.4%;
+        width: 20.2%;
     }
 
     .patientRoom2{
-        right: -36.1%;
-        top: 18.5%;
-        height: 16.5%;
-        width: 27.5%;
+        left: 79%;
+        top: 18.4%;
+        width: 20%;
     }
 
     .ICU1{
         top: 40%;
-        height: 16.5%;
-        width: 13.5%;
+        width: 9.8%;
     }
 
     .ICU2{
-        right: -36%;
+        left: 89.4%;
         top: 40%;
-        height: 16.5%;
-        width: 13.3%;
+        width: 9.6%;
     }
 
     .CCU{
         top: 40%;
-        height: 16.5%;
-        width: 13.3%;
-        left: 30%;
+        width: 9.6%;
+        left: 21.9%;
     }
 
     .Surgery2{
         top: 61.7%;
-        height: 16.5%;
-        width: 18.8%;
+        height: 16.7%;
+        width: 13.8%;
     }
 
     .RecoveryRoom{
         top: 61.7%;
-        height: 16.5%;
-        width: 12.15%;
-        left: 21.1%;
+        width: 8.8%;
+        left: 15.4%;
     }
 
     .Surgery1{
         right: -36.1%;
         top: 61.6%;
-        height: 16.5%;
         width: 15.8%;
     }
 
     .Vacuum{
         top: 79.5%;
+        width: 15.6%;
         height: 20.5%;
-        width: 21.4%;
     }
 
     .Vacuum span{
@@ -224,10 +218,10 @@
     }
 
     .Compressor{
-        top: 79.5%;
+        left: 17%;
+        top: 79.4%;
+        width: 14.6%;
         height: 20.5%;
-        width: 19.9%;
-        left: 23.5%;
     }
 
     .Compressor span{
@@ -235,10 +229,10 @@
     }
 
     .N2OStation{
-        right: -36%;
-        top: 79.6%;
-        height: 20%;
-        width: 15.7%;
+        left: 74.8%;
+        top: 79.4%;
+        width: 12.1%;
+        height: 20.5%;
     }
 
     .N2OStation span{
@@ -246,10 +240,10 @@
     }
 
     .Generator{
-        right: -19.5%;
-        top: 79.6%;
-        height: 20%;
-        width: 16.8%;
+        left: 87.5%;
+        top: 79.4%;
+        width: 11.5%;
+        height: 20.5%;
     }
 
     .Generator span{
