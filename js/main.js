@@ -1,5 +1,5 @@
 const Routs = {
-    Domain: 'http://127.0.0.1:5501/',// $(location).attr('host').toString(),
+    Domain: 'http://' + $(location).attr('host').toString() + '/',
     Carousel: '/partialViewes/testimonial.html',
     Home: '/partialViewes/home.html',
     LatestUpdates: '/partialViewes/latestUpdates.html',
