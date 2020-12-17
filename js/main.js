@@ -1,13 +1,13 @@
 const Routs = {
-    Domain: 'http://127.0.0.1:5501/',// $(location).attr('host').toString(),
-    Carousel: '/partialViewes/testimonial.html',
-    Home: '/partialViewes/home.html',
-    LatestUpdates: '/partialViewes/latestUpdates.html',
-    Services: '/partialViewes/services.html',
-    Projects: '/partialViewes/projects.html',
-    About: '/partialViewes/about.html',
-    Contact: '/partialViewes/Contact.html',
-    Products: '/partialViewes/product.html'
+    Domain: 'http://' + $(location).attr('host').toString() + '/',// $(location).attr('host').toString(),
+    Carousel: './partialViewes/testimonial.html',
+    Home: './partialViewes/home.html',
+    LatestUpdates: './partialViewes/latestUpdates.html',
+    Services: './partialViewes/services.html',
+    Projects: './partialViewes/projects.html',
+    About: './partialViewes/about.html',
+    Contact: './partialViewes/Contact.html',
+    Products: './partialViewes/product.html'
 }
 
 const NoLoadingScreenRouts = [Routs.Carousel, Routs.LatestUpdates]
