@@ -1,5 +1,5 @@
 const Routs = {
-    Domain: 'http://' + $(location).attr('host').toString() + '/',// $(location).attr('host').toString(),
+    Domain: 'https://' + $(location).attr('host').toString() + '/',// $(location).attr('host').toString(),
     Carousel: './partialViewes/testimonial.html',
     Home: './partialViewes/home.html',
     LatestUpdates: './partialViewes/latestUpdates.html',
@@ -35,7 +35,6 @@ $(document).ready(() => {
     loadPartialView('Site-Body', Routs.Home);
     $('#LoadingSpinner').fadeOut();
 
-    console.log('exe');
     $('.home-btn').click((elem) => {
         setActive(elem);
         loadPartialView('Site-Body', Routs.Home);
