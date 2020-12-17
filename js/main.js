@@ -35,6 +35,7 @@ $(document).ready(() => {
     loadPartialView('Site-Body', Routs.Home);
     $('#LoadingSpinner').fadeOut();
 
+    console.log('exe');
     $('.home-btn').click((elem) => {
         setActive(elem);
         loadPartialView('Site-Body', Routs.Home);
