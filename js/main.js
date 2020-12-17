@@ -1,5 +1,5 @@
 const Routs = {
-    Domain: 'https://' + $(location).attr('host').toString() + '/',// $(location).attr('host').toString(),
+    Domain: 'https://' + $(location).attr('host').toString() + '/Modas-International-Demo/',
     Carousel: './partialViewes/testimonial.html',
     Home: './partialViewes/home.html',
     LatestUpdates: './partialViewes/latestUpdates.html',
