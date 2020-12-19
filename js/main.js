@@ -6,7 +6,7 @@ const Routs = {
     Services: './partialViewes/services.html',
     Projects: './partialViewes/projects.html',
     About: './partialViewes/about.html',
-    Contact: './partialViewes/Contact.html',
+    Contact: './partialViewes/contact.html',
     Products: './partialViewes/product.html'
 }
 
