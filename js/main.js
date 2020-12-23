@@ -1,13 +1,13 @@
 const Routs = {
-    Domain: 'https://' + $(location).attr('host').toString() + '/Modas-International-Demo/',
-    Carousel: './partialViewes/testimonial.html',
-    Home: './partialViewes/home.html',
-    LatestUpdates: './partialViewes/latestUpdates.html',
-    Services: './partialViewes/services.html',
-    Projects: './partialViewes/projects.html',
-    About: './partialViewes/about.html',
-    Contact: './partialViewes/contact.html',
-    Products: './partialViewes/product.html'
+    Domain: 'http://' + $(location).attr('host').toString(),
+    Carousel: '/partialViewes/testimonial.html',
+    Home: '/partialViewes/home.html',
+    LatestUpdates: '/partialViewes/latestUpdates.html',
+    Services: '/partialViewes/services.html',
+    Projects: '/partialViewes/projects.html',
+    About: '/partialViewes/about.html',
+    Contact: '/partialViewes/contact.html',
+    Products: '/partialViewes/product.html'
 }
 
 const NoLoadingScreenRouts = [Routs.Carousel, Routs.LatestUpdates]
@@ -16,7 +16,7 @@ let loadPartialView = (HolderTagId, Url) => {
     if(!NoLoadingScreenRouts.includes(Url))
         $('#LoadingSpinner').fadeIn();
     let holdingTagId = (HolderTagId[0] == '#')? HolderTagId : '#' + HolderTagId;
-    
+    console.log(Routs.Domain + Url);
     $.ajax({
         url: Routs.Domain + Url,
         success: function (result) {
@@ -26,7 +26,7 @@ let loadPartialView = (HolderTagId, Url) => {
                 setTimeout(() => { $('#LoadingSpinner').fadeOut(); }, 1000);
         },
         error(response) {
-            console.error(response);
+            console.error(response.statusText);
         }
     });
 }
